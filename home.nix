@@ -40,6 +40,7 @@
     apps/foot.nix
     apps/git.nix
     apps/vim.nix
+    apps/zsh.nix
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

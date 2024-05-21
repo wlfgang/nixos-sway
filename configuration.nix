@@ -26,6 +26,7 @@ in
   environment.etc."greetd/environments".text = ''
     sway
     bash
+    zsh
   '';
 
   imports =
@@ -101,12 +102,16 @@ in
     wl-clipboard
   ];
 
+  # Enable shells
+  environment.shells = with pkgs; [ bash zsh fish ];
+
   # Install sway
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
   };
 
+  # Fonts
   fonts.packages = with pkgs; [
     fira-code
     fira-code-symbols
