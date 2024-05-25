@@ -39,6 +39,7 @@
   imports = [
     apps/foot.nix
     apps/git.nix
+    apps/sway.nix
     apps/vim.nix
     apps/zsh.nix
   ];
