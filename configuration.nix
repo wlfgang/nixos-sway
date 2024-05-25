@@ -112,6 +112,8 @@ in
     enable = true;
     wrapperFeatures.gtk = true;
   };
+  hardware.opengl.enable = true;
+  security.polkit.enable = true;
 
   # Fonts
   fonts.packages = with pkgs; [
